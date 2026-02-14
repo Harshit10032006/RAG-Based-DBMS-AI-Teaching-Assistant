@@ -1,0 +1,2553 @@
+{
+    "chunks": [
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 0.0,
+            "end": 14.0,
+            "text": " Hello, this is Lakshya and today we are going to discuss a very important topic on DBMS lecture 17."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 14.0,
+            "end": 21.0,
+            "text": " A topic which is used a lot on the internet, servers and database systems."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 21.0,
+            "end": 25.0,
+            "text": " The concept is called Clustering."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 25.0,
+            "end": 27.0,
+            "text": " What is clustering?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 27.0,
+            "end": 31.0,
+            "text": " The second name of this is Replica Set."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 31.0,
+            "end": 37.0,
+            "text": " I hope you are understanding this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 37.0,
+            "end": 39.0,
+            "text": " Let me give you an example."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 39.0,
+            "end": 49.0,
+            "text": " Suppose you have a database with all the information of Amazon."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 49.0,
+            "end": 51.0,
+            "text": " Now tell me one thing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 51.0,
+            "end": 54.0,
+            "text": " There are millions of customers and millions of requests."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 54.0,
+            "end": 58.0,
+            "text": " There are customers from all over the world and there is only one database."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 58.0,
+            "end": 67.0,
+            "text": " If there is only one database and there are many requests, then it is necessary to handle millions of requests."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 67.0,
+            "end": 71.0,
+            "text": " Seqnually or synchronously."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 71.0,
+            "end": 76.0,
+            "text": " But the problem is that if you have a system of one database in a computer,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 76.0,
+            "end": 79.0,
+            "text": " no matter how much you have scaled it vertically,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 79.0,
+            "end": 83.0,
+            "text": " no matter how much you have made it a powerful supercomputer,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 83.0,
+            "end": 88.0,
+            "text": " but if there are so many requests worldwide in www,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 88.0,
+            "end": 91.0,
+            "text": " it is very difficult to serve."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 91.0,
+            "end": 93.0,
+            "text": " This video is sponsored by Cryo."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 93.0,
+            "end": 96.0,
+            "text": " Cryo is a world's leading work experience based learning platform."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 96.0,
+            "end": 100.0,
+            "text": " Where you can enhance your software skills and also grab top-debt jobs."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 100.0,
+            "end": 105.0,
+            "text": " Unlike usual courses, you are going to learn full-stack development or backend development in Cryo."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 105.0,
+            "end": 108.0,
+            "text": " But by building industry-level projects in a real developer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 108.0,
+            "end": 111.0,
+            "text": " At the end of their programs, you will have made a lot of projects,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 111.0,
+            "end": 116.0,
+            "text": " which will make your resume more effective and will also become a strong GitHub profile."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 116.0,
+            "end": 120.0,
+            "text": " You are in full-stack development, backend development, what tech are you going to use,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 120.0,
+            "end": 121.0,
+            "text": " all of that is also visible here."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 121.0,
+            "end": 124.0,
+            "text": " And you are also going to get personalized career assistance."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 124.0,
+            "end": 126.0,
+            "text": " So that your dream job is double surety."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 126.0,
+            "end": 127.0,
+            "text": " What do you have to do?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 127.0,
+            "end": 129.0,
+            "text": " I attach a link in the description."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 129.0,
+            "end": 134.0,
+            "text": " By using it, you can take the maximum possible discount on Cryo programs."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 134.0,
+            "end": 136.0,
+            "text": " And you can also unlock some free resources."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 136.0,
+            "end": 137.0,
+            "text": " So quickly go to the description."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 137.0,
+            "end": 139.0,
+            "text": " Use the link."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 139.0,
+            "end": 140.0,
+            "text": " Grab a placement."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 140.0,
+            "end": 141.0,
+            "text": " And give me a party."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 141.0,
+            "end": 143.0,
+            "text": " So book your free trial now."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 143.0,
+            "end": 147.0,
+            "text": " Second, if suppose this database gets downed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 147.0,
+            "end": 150.0,
+            "text": " For some reason, this computer gets downed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 150.0,
+            "end": 152.0,
+            "text": " Then your availability will be lost."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 152.0,
+            "end": 153.0,
+            "text": " Your website will get downed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 153.0,
+            "end": 155.0,
+            "text": " You won't be able to see anything."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 155.0,
+            "end": 156.0,
+            "text": " Your users will shout at you."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 156.0,
+            "end": 157.0,
+            "text": " Right?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 157.0,
+            "end": 158.0,
+            "text": " You will face a problem."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 158.0,
+            "end": 160.0,
+            "text": " So to solve this thing,"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 160.0,
+            "end": 166.0,
+            "text": " in DBMS, there is a concept which mostly arose when internet became very popular."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 167.0,
+            "end": 172.0,
+            "text": " Now, we have read that NoSQL databases are used there where there is internet."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 172.0,
+            "end": 175.0,
+            "text": " You have to make multiple servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 175.0,
+            "end": 177.0,
+            "text": " You have to do horizontal scaling."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 177.0,
+            "end": 181.0,
+            "text": " You have to launch your website on the internet."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 181.0,
+            "end": 184.0,
+            "text": " In the server of the website, you mostly use NoSQL."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 184.0,
+            "end": 185.0,
+            "text": " Right?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 185.0,
+            "end": 187.0,
+            "text": " This is the work of NoSQL."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 187.0,
+            "end": 190.0,
+            "text": " So this is used more there."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 190.0,
+            "end": 191.0,
+            "text": " In NoSQL."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 191.0,
+            "end": 192.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 192.0,
+            "end": 193.0,
+            "text": " It is also used in SQL."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 193.0,
+            "end": 194.0,
+            "text": " We can do it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 194.0,
+            "end": 195.0,
+            "text": " But mostly it is used there."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 195.0,
+            "end": 196.0,
+            "text": " So MongoDB is also used for this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 196.0,
+            "end": 198.0,
+            "text": " It is a very good example."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 198.0,
+            "end": 199.0,
+            "text": " It is a replica set."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 199.0,
+            "end": 200.0,
+            "text": " It is a function by doing replication."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 200.0,
+            "end": 203.0,
+            "text": " Or it provides a concept by doing replication."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 203.0,
+            "end": 205.0,
+            "text": " You can make replicas of the database in this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 205.0,
+            "end": 206.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 206.0,
+            "end": 207.0,
+            "text": " A lot of mess has been made."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 207.0,
+            "end": 211.0,
+            "text": " Let's understand once what exactly is this thing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 211.0,
+            "end": 215.0,
+            "text": " What you do is, make one server as S1."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 215.0,
+            "end": 217.0,
+            "text": " Make one server as S2."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 217.0,
+            "end": 218.0,
+            "text": " Make another server as S3."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 218.0,
+            "end": 219.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 219.0,
+            "end": 222.0,
+            "text": " Now these will be your servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 222.0,
+            "end": 224.0,
+            "text": " Now these set of servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 224.0,
+            "end": 225.0,
+            "text": " Set of servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 225.0,
+            "end": 232.0,
+            "text": " Or I can say replica sets."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 232.0,
+            "end": 233.0,
+            "text": " Why am I saying replica sets?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 233.0,
+            "end": 234.0,
+            "text": " You have understood."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 234.0,
+            "end": 236.0,
+            "text": " That you have only one database."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 236.0,
+            "end": 237.0,
+            "text": " The database is only one."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 237.0,
+            "end": 243.0,
+            "text": " And its replica is database 1, D2 and D3."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 243.0,
+            "end": 246.0,
+            "text": " And D1 is equal to D2 is equal to D3."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 246.0,
+            "end": 251.0,
+            "text": " That means the same data is stored in all three servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 251.0,
+            "end": 254.0,
+            "text": " Suppose here the data of the users of Amazon was stored."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 254.0,
+            "end": 255.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 255.0,
+            "end": 256.0,
+            "text": " Then the data of users is same."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 256.0,
+            "end": 259.0,
+            "text": " User's data is here also, time for data of users is here also."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 259.0,
+            "end": 265.0,
+            "text": " It is not like, in S1 more users data is there, in S2 less user data is there."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 265.0,
+            "end": 268.0,
+            "text": " In all three, the data of the same users is there."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 268.0,
+            "end": 269.0,
+            "text": " Replicas are made."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 269.0,
+            "end": 270.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 270.0,
+            "end": 273.0,
+            "text": " Same is, S1 equal to S2."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 273.0,
+            "end": 276.0,
+            "text": " The data set, which is the data information, which is stored in it, is the same."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 276.0,
+            "end": 277.0,
+            "text": " Okay?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 277.0,
+            "end": 280.0,
+            "text": " Suppose there is thousands user information in this, then in this also there is the same"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 280.0,
+            "end": 282.0,
+            "text": " information of the same thousands users."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 282.0,
+            "end": 283.0,
+            "text": " In S2 as well, there is the same information of the same thousand expressions."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 283.0,
+            "end": 284.0,
+            "text": " Oh!"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 284.0,
+            "end": 296.0,
+            "text": " Now this set of replicas or servers is called cluster"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 296.0,
+            "end": 298.0,
+            "text": " This is one cluster"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 298.0,
+            "end": 300.0,
+            "text": " This is cluster"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 300.0,
+            "end": 304.0,
+            "text": " Cluster means bundle, collection, group"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 304.0,
+            "end": 307.0,
+            "text": " So this is clustering"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 307.0,
+            "end": 321.0,
+            "text": " When you manage your system like this"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 321.0,
+            "end": 330.0,
+            "text": " You make same instance, make replicas and store them in a cluster"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 330.0,
+            "end": 332.0,
+            "text": " Why are we doing this?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 332.0,
+            "end": 334.0,
+            "text": " We are making replicas"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 334.0,
+            "end": 336.0,
+            "text": " Why are we doing replicas?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 336.0,
+            "end": 340.0,
+            "text": " Why are we doing replicas?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 340.0,
+            "end": 342.0,
+            "text": " I told you that all three are same"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 342.0,
+            "end": 344.0,
+            "text": " Why are we doing this?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 344.0,
+            "end": 352.0,
+            "text": " The best example of this is redundancy"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 352.0,
+            "end": 355.0,
+            "text": " Now you will say that in database management system"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 355.0,
+            "end": 357.0,
+            "text": " You must have heard about redundancy"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 357.0,
+            "end": 359.0,
+            "text": " Redundancy should not happen"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 359.0,
+            "end": 362.0,
+            "text": " Redundancy is not a useless thing"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 362.0,
+            "end": 363.0,
+            "text": " It is not like that"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 363.0,
+            "end": 364.0,
+            "text": " Everytime redundancy is not useless"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 364.0,
+            "end": 366.0,
+            "text": " Here we are not talking about the redundancy"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 366.0,
+            "end": 371.0,
+            "text": " Because of which anomalies were generated"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 371.0,
+            "end": 374.0,
+            "text": " Here we are not storing same student Rahul"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 374.0,
+            "end": 376.0,
+            "text": " Here this is not happening"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 376.0,
+            "end": 380.0,
+            "text": " Here same user's information is there in this server"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 380.0,
+            "end": 382.0,
+            "text": " All the users' information is there"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 382.0,
+            "end": 384.0,
+            "text": " All the users' information in this server"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 384.0,
+            "end": 385.0,
+            "text": " All users' information in this server"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 385.0,
+            "end": 388.0,
+            "text": " Repeated information is in different servers"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 388.0,
+            "end": 390.0,
+            "text": " If Rahul's information is here"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 390.0,
+            "end": 392.0,
+            "text": " Then Rahul's information will be there too"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 392.0,
+            "end": 393.0,
+            "text": " And Rahul's information will be here too"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 393.0,
+            "end": 405.0,
+            "text": " So within same database it is not replicated. This is another type of redundancy that the data in one server is replicated in other servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 405.0,
+            "end": 417.0,
+            "text": " So what is the benefit of this redundancy? Now we have come to know that the same data sets are sitting in all the servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 417.0,
+            "end": 426.0,
+            "text": " Now suppose S1 is shut down for some reason. Now what are the reasons for shut down?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 426.0,
+            "end": 430.0,
+            "text": " It is possible that a hacker has attacked S1 and you have interrupted it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 430.0,
+            "end": 435.0,
+            "text": " I think there is some illegal activity going on in this. So you will want to shut down S1 by running away."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 435.0,
+            "end": 440.0,
+            "text": " This is a real-time scenario. Second, you are doing maintenance."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 440.0,
+            "end": 447.0,
+            "text": " Your regular maintenance is going on or any ad sector, any information or any platform"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 447.0,
+            "end": 452.0,
+            "text": " So you have a problem with your S1 node and you have to shut it down."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 452.0,
+            "end": 459.0,
+            "text": " Now there may be some confusion. What is S1 server? What is the node? What is the host?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 459.0,
+            "end": 463.0,
+            "text": " Simply put it like this that there is a computer which is a very good capable computer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 463.0,
+            "end": 469.0,
+            "text": " It is connected to the internet. Its main job is to store the data and it receives requests on it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 469.0,
+            "end": 475.0,
+            "text": " And it processes the data and sends it back. Ok. It is a computer. Server is a computer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 475.0,
+            "end": 476.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 476.0,
+            "end": 477.0,
+            "text": " Now"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 477.0,
+            "end": 507.0,
+            "text": ""
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 507.0,
+            "end": 510.0,
+            "text": " The main advantage of this is that the website will always be on. It will not be blocked."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 510.0,
+            "end": 513.0,
+            "text": " Your website will always be available. Users will always be able to access it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 513.0,
+            "end": 521.0,
+            "text": " So the main advantage of this is that due to introducing redundancy, you made your system highly available."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 521.0,
+            "end": 525.0,
+            "text": " Ok. What is the other advantage of this? Now look carefully."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 525.0,
+            "end": 529.0,
+            "text": " We must have read abstractions. Now here a layer of abstraction has been added."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 529.0,
+            "end": 533.0,
+            "text": " Clustering adds a layer of abstraction. How is that?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 533.0,
+            "end": 536.0,
+            "text": " The user does not know whether data is coming from S1 or S2 or S3."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 536.0,
+            "end": 541.0,
+            "text": " He is getting data. Ok. He is getting data. And you have abstracted this thing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 541.0,
+            "end": 544.0,
+            "text": " Ok. You are not showing the user. You have hidden it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 544.0,
+            "end": 546.0,
+            "text": " That information is coming from S1, S2 or S3."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 546.0,
+            "end": 549.0,
+            "text": " That information is coming from somewhere. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 549.0,
+            "end": 552.0,
+            "text": " What is the second advantage of this? Load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 555.0,
+            "end": 564.0,
+            "text": " Now what is load balancing? Now we were talking in the beginning that we get multiple requests. Multiple requests."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 564.0,
+            "end": 568.0,
+            "text": " Ok. Millions of requests can come. Millions of requests. Right."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 568.0,
+            "end": 571.0,
+            "text": " Now suppose if there is only one server. If there is only one server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 571.0,
+            "end": 576.0,
+            "text": " Suppose if there is a million of requests coming. Then all the server has to be handled sequentially."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 576.0,
+            "end": 585.0,
+            "text": " Ok. So this server basically gets loaded. And it can be hanged or crashed. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 585.0,
+            "end": 591.0,
+            "text": " So better than this, if I have replicasets. I have many replicas made of the same DB."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 591.0,
+            "end": 593.0,
+            "text": " Of the same dataset. So I have to load balance them. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 593.0,
+            "end": 595.0,
+            "text": " So can I load balance them?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 595.0,
+            "end": 598.0,
+            "text": " Some requests I will give to S1. Some requests I will give to S2."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 598.0,
+            "end": 600.0,
+            "text": " Some requests I will give to S3. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 600.0,
+            "end": 602.0,
+            "text": " So there were so many requests. I will send something here."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 602.0,
+            "end": 605.0,
+            "text": " I will send something here. I will send something here. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 605.0,
+            "end": 607.0,
+            "text": " So what will happen with this? Load will be balanced."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 607.0,
+            "end": 609.0,
+            "text": " No system will crash. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 609.0,
+            "end": 612.0,
+            "text": " Because if a lot of information is put in one system."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 612.0,
+            "end": 615.0,
+            "text": " A lot of load will be put in it. So there are many chances that it will crash. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 615.0,
+            "end": 618.0,
+            "text": " So this is my advantage. That I am running by doing load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 618.0,
+            "end": 622.0,
+            "text": " So my system. My system does not crash."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 622.0,
+            "end": 623.0,
+            "text": " It keeps running robustly."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 623.0,
+            "end": 625.0,
+            "text": " And the website never gets down."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 625.0,
+            "end": 628.0,
+            "text": " Database never gets affected. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 628.0,
+            "end": 630.0,
+            "text": " Now if you want to do load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 630.0,
+            "end": 633.0,
+            "text": " Then you have to put a logic. A layer of abstraction."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 633.0,
+            "end": 635.0,
+            "text": " Here you have to put an abstraction. You have to put an interface."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 635.0,
+            "end": 637.0,
+            "text": " And what will that layer do?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 637.0,
+            "end": 639.0,
+            "text": " What will that layer do? That will be the layer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 639.0,
+            "end": 641.0,
+            "text": " The layer of load balancer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 643.0,
+            "end": 645.0,
+            "text": " The layer of load balancer. You must have understood. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 645.0,
+            "end": 650.0,
+            "text": " A lot of your requests are coming."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 650.0,
+            "end": 652.0,
+            "text": " And what will you do? You will see. Which server is there?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 652.0,
+            "end": 655.0,
+            "text": " Which server is less loaded? Is S1 less loaded?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 655.0,
+            "end": 658.0,
+            "text": " Or is S2 less loaded? Whatever is less loaded."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 658.0,
+            "end": 661.0,
+            "text": " I will give the request to that. I will pass on the request."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 661.0,
+            "end": 664.0,
+            "text": " Pass on the new request. Ok. So basically what do we want?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 664.0,
+            "end": 667.0,
+            "text": " If we have made a replica set. Then we need a load balancer."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 667.0,
+            "end": 670.0,
+            "text": " In our architecture, what will that load balancer do?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 670.0,
+            "end": 675.0,
+            "text": " That whatever server's replica. Whatever server is the least loaded."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 675.0,
+            "end": 678.0,
+            "text": " That request should be given to that new request. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 678.0,
+            "end": 681.0,
+            "text": " So we will understand that load balancing is a very big."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 681.0,
+            "end": 685.0,
+            "text": " Benefit. That I will benefit from load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 685.0,
+            "end": 688.0,
+            "text": " Now look carefully that all the things are going somewhere."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 688.0,
+            "end": 691.0,
+            "text": " Going towards availability. Why are we doing load balancing?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 691.0,
+            "end": 694.0,
+            "text": " We are doing load balancing so that first it becomes fast."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 694.0,
+            "end": 697.0,
+            "text": " If only one server is loaded then it will be delayed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 697.0,
+            "end": 699.0,
+            "text": " So that your request will be executed fast."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 699.0,
+            "end": 703.0,
+            "text": " Second, if only one server is loaded then it will crash."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 703.0,
+            "end": 706.0,
+            "text": " Everything is going towards availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 706.0,
+            "end": 708.0,
+            "text": " Your website should be on every time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 708.0,
+            "end": 710.0,
+            "text": " It should not happen that your website is down. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 710.0,
+            "end": 713.0,
+            "text": " So third and the most important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 713.0,
+            "end": 717.0,
+            "text": " Its advantage is availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 717.0,
+            "end": 720.0,
+            "text": " When I will call it high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 720.0,
+            "end": 722.0,
+            "text": " What does high availability mean?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 722.0,
+            "end": 724.0,
+            "text": " If your S1 is down. Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 724.0,
+            "end": 726.0,
+            "text": " Let's write it properly once."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 726.0,
+            "end": 729.0,
+            "text": " If your S1 is down."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 729.0,
+            "end": 735.0,
+            "text": " Then S2 and S3 is available as a backup."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 735.0,
+            "end": 739.0,
+            "text": " So you are able to ensure at any point of time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 739.0,
+            "end": 743.0,
+            "text": " That your request will be executed by any server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 743.0,
+            "end": 746.0,
+            "text": " And the user will not even know that the request has come from S2."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 746.0,
+            "end": 750.0,
+            "text": " Because there is a layer of abstraction."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 750.0,
+            "end": 751.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 751.0,
+            "end": 753.0,
+            "text": " Whatever server is available, the request will come from that."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 753.0,
+            "end": 755.0,
+            "text": " And because all the servers have the same information store."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 755.0,
+            "end": 757.0,
+            "text": " So the user will always get the same data."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 757.0,
+            "end": 758.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 758.0,
+            "end": 759.0,
+            "text": " Very good."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 759.0,
+            "end": 762.0,
+            "text": " So these were three very important examples of clustering."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 762.0,
+            "end": 764.0,
+            "text": " And clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 764.0,
+            "end": 768.0,
+            "text": " And in today's date, whatever you are using Facebook, Instagram, WhatsApp, YouTube."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 768.0,
+            "end": 770.0,
+            "text": " Whatever you are using, clustering is applied in all."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 770.0,
+            "end": 772.0,
+            "text": " Replica sets are made."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 772.0,
+            "end": 773.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 773.0,
+            "end": 775.0,
+            "text": " And the replica set that is made."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 775.0,
+            "end": 778.0,
+            "text": " I will tell you a very good example of that."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 778.0,
+            "end": 780.0,
+            "text": " And which is also your homework."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 780.0,
+            "end": 782.0,
+            "text": " You will read it properly."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 782.0,
+            "end": 789.0,
+            "text": " You have to read content delivery network."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 789.0,
+            "end": 792.0,
+            "text": " Purely replica set and clustering is related."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 792.0,
+            "end": 793.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 793.0,
+            "end": 794.0,
+            "text": " What will you read about this?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 794.0,
+            "end": 796.0,
+            "text": " You will read from the internet."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 796.0,
+            "end": 797.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 797.0,
+            "end": 798.0,
+            "text": " You will read from the internet."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 798.0,
+            "end": 799.0,
+            "text": " And you will tell the comment section."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 799.0,
+            "end": 801.0,
+            "text": " I will give you a little hint."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 801.0,
+            "end": 802.0,
+            "text": " What is this?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 802.0,
+            "end": 807.0,
+            "text": " You make a group of servers and distribute them geographically."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 807.0,
+            "end": 810.0,
+            "text": " After distributing geographically, the same data is also in India."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 810.0,
+            "end": 811.0,
+            "text": " The same data is also in the US."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 811.0,
+            "end": 813.0,
+            "text": " The same data is also in Europe."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 813.0,
+            "end": 816.0,
+            "text": " Now whenever the nearest to it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 816.0,
+            "end": 819.0,
+            "text": " Like whenever people of India will send a request."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 819.0,
+            "end": 821.0,
+            "text": " So that thing will be sent to the Indian server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 821.0,
+            "end": 826.0,
+            "text": " And so that you get the response of your request after the fast process."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 826.0,
+            "end": 829.0,
+            "text": " So in this way, to do fast delivery of content."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 829.0,
+            "end": 832.0,
+            "text": " I divide the group of servers geographically."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 832.0,
+            "end": 833.0,
+            "text": " So that they work together."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 833.0,
+            "end": 836.0,
+            "text": " And those replica sets are YouTube's database."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 836.0,
+            "end": 838.0,
+            "text": " Which is in India's data server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 838.0,
+            "end": 840.0,
+            "text": " That will be in the US data server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 840.0,
+            "end": 841.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 841.0,
+            "end": 842.0,
+            "text": " Very good."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 842.0,
+            "end": 845.0,
+            "text": " I am not going into much detail about this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 845.0,
+            "end": 846.0,
+            "text": " It is your homework."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 846.0,
+            "end": 848.0,
+            "text": " You will read it properly."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 848.0,
+            "end": 849.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 849.0,
+            "end": 851.0,
+            "text": " And once tell in the comment section."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 851.0,
+            "end": 852.0,
+            "text": " Whether you understand or not."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 852.0,
+            "end": 854.0,
+            "text": " This is a very important concept."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 854.0,
+            "end": 855.0,
+            "text": " You should know this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 855.0,
+            "end": 857.0,
+            "text": " We have covered it in a very quick video."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 857.0,
+            "end": 858.0,
+            "text": " Let's go to the notes quickly."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 858.0,
+            "end": 861.0,
+            "text": " Let's go to the notes and see what is written about it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 861.0,
+            "end": 862.0,
+            "text": " So clustering."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 862.0,
+            "end": 864.0,
+            "text": " Which is also called making replica sets."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 864.0,
+            "end": 865.0,
+            "text": " What is the replica set?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 865.0,
+            "end": 866.0,
+            "text": " Group of servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 866.0,
+            "end": 868.0,
+            "text": " So that they work together."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 868.0,
+            "end": 870.0,
+            "text": " Process of combining more than one server."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 870.0,
+            "end": 872.0,
+            "text": " And instance connecting a single database."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 872.0,
+            "end": 873.0,
+            "text": " What am I saying about single database?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 873.0,
+            "end": 875.0,
+            "text": " That there is only single data in it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 875.0,
+            "end": 876.0,
+            "text": " There is only one data."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 876.0,
+            "end": 877.0,
+            "text": " There is only one data."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 877.0,
+            "end": 878.0,
+            "text": " There is only one data set."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 878.0,
+            "end": 879.0,
+            "text": " It is repeated."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 879.0,
+            "end": 880.0,
+            "text": " On different servers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 880.0,
+            "end": 881.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 881.0,
+            "end": 883.0,
+            "text": " We have seen the advantages of this."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 883.0,
+            "end": 884.0,
+            "text": " Advantage of data redundancy."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 884.0,
+            "end": 885.0,
+            "text": " There is load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 885.0,
+            "end": 887.0,
+            "text": " There is high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 887.0,
+            "end": 888.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 888.0,
+            "end": 891.0,
+            "text": " And another advantage of load balancing is that you can do scaling."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 891.0,
+            "end": 893.0,
+            "text": " This can provide scaling seamlessly."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 893.0,
+            "end": 897.0,
+            "text": " Scaling means when many user requests keep increasing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 897.0,
+            "end": 900.0,
+            "text": " So one server is not able to load it."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 900.0,
+            "end": 903.0,
+            "text": " So you have made the servers replica."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 903.0,
+            "end": 904.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 904.0,
+            "end": 906.0,
+            "text": " So with the help of load balancing."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 906.0,
+            "end": 909.0,
+            "text": " Basically, you can handle the new requests."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 909.0,
+            "end": 910.0,
+            "text": " The more requests are coming."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 910.0,
+            "end": 911.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 911.0,
+            "end": 913.0,
+            "text": " And this ensures high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 913.0,
+            "end": 914.0,
+            "text": " Because if you have high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 914.0,
+            "end": 916.0,
+            "text": " If one server is loaded."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 916.0,
+            "end": 920.0,
+            "text": " Then it can crash."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 920.0,
+            "end": 921.0,
+            "text": " High availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 921.0,
+            "end": 924.0,
+            "text": " The work of all these is to ensure high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 924.0,
+            "end": 926.0,
+            "text": " Your website should keep running."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 926.0,
+            "end": 927.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 927.0,
+            "end": 928.0,
+            "text": " How does clustering work?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 928.0,
+            "end": 929.0,
+            "text": " How does clustering work?"
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 929.0,
+            "end": 930.0,
+            "text": " We do clustering work."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 930.0,
+            "end": 934.0,
+            "text": " In a clustering architecture, all the requests are split in many computers."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 934.0,
+            "end": 936.0,
+            "text": " So that individual user request is executed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 936.0,
+            "end": 937.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 937.0,
+            "end": 938.0,
+            "text": " The same simple."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 938.0,
+            "end": 939.0,
+            "text": " Many requests are coming."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 939.0,
+            "end": 943.0,
+            "text": " While looking at them, load balancer sees which computer or which node, which server is less loaded."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 943.0,
+            "end": 944.0,
+            "text": " I send it on that."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 944.0,
+            "end": 945.0,
+            "text": " So many requests are coming."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 945.0,
+            "end": 946.0,
+            "text": " Many requests are coming."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 946.0,
+            "end": 947.0,
+            "text": " Whatever server is less loaded."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 947.0,
+            "end": 948.0,
+            "text": " Let's send it on that."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 948.0,
+            "end": 949.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 949.0,
+            "end": 950.0,
+            "text": " So this is how clustering architecture works."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 950.0,
+            "end": 951.0,
+            "text": " So I hope you understand."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 951.0,
+            "end": 952.0,
+            "text": " Clustering must have become clear in your mind."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 952.0,
+            "end": 953.0,
+            "text": " It is a very important topic."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 953.0,
+            "end": 954.0,
+            "text": " In real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 954.0,
+            "end": 955.0,
+            "text": " All companies."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 955.0,
+            "end": 956.0,
+            "text": " Big big product based companies."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 956.0,
+            "end": 957.0,
+            "text": " In their product."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 957.0,
+            "end": 958.0,
+            "text": " Whatever their internet based product is."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 958.0,
+            "end": 959.0,
+            "text": " They definitely use clustering."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 959.0,
+            "end": 960.0,
+            "text": " To ensure high availability."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 960.0,
+            "end": 961.0,
+            "text": " That their users."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 961.0,
+            "end": 962.0,
+            "text": " Exceed."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 962.0,
+            "end": 963.0,
+            "text": " In real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 963.0,
+            "end": 964.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 964.0,
+            "end": 965.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 965.0,
+            "end": 966.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 966.0,
+            "end": 967.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 967.0,
+            "end": 968.0,
+            "text": " In real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 968.0,
+            "end": 969.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 969.0,
+            "end": 970.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 970.0,
+            "end": 971.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 971.0,
+            "end": 972.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 972.0,
+            "end": 973.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 973.0,
+            "end": 974.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 974.0,
+            "end": 975.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 975.0,
+            "end": 976.0,
+            "text": " So in real time."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 976.0,
+            "end": 977.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 977.0,
+            "end": 978.0,
+            "text": " Clustering is very important."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 978.0,
+            "end": 979.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 979.0,
+            "end": 980.0,
+            "text": " So I hope that."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 980.0,
+            "end": 981.0,
+            "text": " You have got a seamless experience."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 981.0,
+            "end": 982.0,
+            "text": " That you never down their website."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 982.0,
+            "end": 983.0,
+            "text": " Ok."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 983.0,
+            "end": 984.0,
+            "text": " Very good."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 984.0,
+            "end": 985.0,
+            "text": " See you in next lecture."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 985.0,
+            "end": 986.0,
+            "text": " Till then."
+        },
+        {
+            "number": " 17",
+            "title": "What is Clustering \u29f8 Replication in DBMS",
+            "start": 986.0,
+            "end": 987.0,
+            "text": " Good bye."
+        }
+    ],
+    "text": " Hello, this is Lakshya and today we are going to discuss a very important topic on DBMS lecture 17. A topic which is used a lot on the internet, servers and database systems. The concept is called Clustering. What is clustering? The second name of this is Replica Set. I hope you are understanding this. Let me give you an example. Suppose you have a database with all the information of Amazon. Now tell me one thing. There are millions of customers and millions of requests. There are customers from all over the world and there is only one database. If there is only one database and there are many requests, then it is necessary to handle millions of requests. Seqnually or synchronously. But the problem is that if you have a system of one database in a computer, no matter how much you have scaled it vertically, no matter how much you have made it a powerful supercomputer, but if there are so many requests worldwide in www, it is very difficult to serve. This video is sponsored by Cryo. Cryo is a world's leading work experience based learning platform. Where you can enhance your software skills and also grab top-debt jobs. Unlike usual courses, you are going to learn full-stack development or backend development in Cryo. But by building industry-level projects in a real developer. At the end of their programs, you will have made a lot of projects, which will make your resume more effective and will also become a strong GitHub profile. You are in full-stack development, backend development, what tech are you going to use, all of that is also visible here. And you are also going to get personalized career assistance. So that your dream job is double surety. What do you have to do? I attach a link in the description. By using it, you can take the maximum possible discount on Cryo programs. And you can also unlock some free resources. So quickly go to the description. Use the link. Grab a placement. And give me a party. So book your free trial now. Second, if suppose this database gets downed. For some reason, this computer gets downed. Then your availability will be lost. Your website will get downed. You won't be able to see anything. Your users will shout at you. Right? You will face a problem. So to solve this thing, in DBMS, there is a concept which mostly arose when internet became very popular. Now, we have read that NoSQL databases are used there where there is internet. You have to make multiple servers. You have to do horizontal scaling. You have to launch your website on the internet. In the server of the website, you mostly use NoSQL. Right? This is the work of NoSQL. So this is used more there. In NoSQL. Okay? It is also used in SQL. We can do it. But mostly it is used there. So MongoDB is also used for this. It is a very good example. It is a replica set. It is a function by doing replication. Or it provides a concept by doing replication. You can make replicas of the database in this. Okay? A lot of mess has been made. Let's understand once what exactly is this thing. What you do is, make one server as S1. Make one server as S2. Make another server as S3. Okay? Now these will be your servers. Now these set of servers. Set of servers. Or I can say replica sets. Why am I saying replica sets? You have understood. That you have only one database. The database is only one. And its replica is database 1, D2 and D3. And D1 is equal to D2 is equal to D3. That means the same data is stored in all three servers. Suppose here the data of the users of Amazon was stored. Okay? Then the data of users is same. User's data is here also, time for data of users is here also. It is not like, in S1 more users data is there, in S2 less user data is there. In all three, the data of the same users is there. Replicas are made. Okay? Same is, S1 equal to S2. The data set, which is the data information, which is stored in it, is the same. Okay? Suppose there is thousands user information in this, then in this also there is the same information of the same thousands users. In S2 as well, there is the same information of the same thousand expressions. Oh! Now this set of replicas or servers is called cluster This is one cluster This is cluster Cluster means bundle, collection, group So this is clustering When you manage your system like this You make same instance, make replicas and store them in a cluster Why are we doing this? We are making replicas Why are we doing replicas? Why are we doing replicas? I told you that all three are same Why are we doing this? The best example of this is redundancy Now you will say that in database management system You must have heard about redundancy Redundancy should not happen Redundancy is not a useless thing It is not like that Everytime redundancy is not useless Here we are not talking about the redundancy Because of which anomalies were generated Here we are not storing same student Rahul Here this is not happening Here same user's information is there in this server All the users' information is there All the users' information in this server All users' information in this server Repeated information is in different servers If Rahul's information is here Then Rahul's information will be there too And Rahul's information will be here too So within same database it is not replicated. This is another type of redundancy that the data in one server is replicated in other servers. So what is the benefit of this redundancy? Now we have come to know that the same data sets are sitting in all the servers. Now suppose S1 is shut down for some reason. Now what are the reasons for shut down? It is possible that a hacker has attacked S1 and you have interrupted it. I think there is some illegal activity going on in this. So you will want to shut down S1 by running away. This is a real-time scenario. Second, you are doing maintenance. Your regular maintenance is going on or any ad sector, any information or any platform So you have a problem with your S1 node and you have to shut it down. Now there may be some confusion. What is S1 server? What is the node? What is the host? Simply put it like this that there is a computer which is a very good capable computer. It is connected to the internet. Its main job is to store the data and it receives requests on it. And it processes the data and sends it back. Ok. It is a computer. Server is a computer. Ok. Now The main advantage of this is that the website will always be on. It will not be blocked. Your website will always be available. Users will always be able to access it. So the main advantage of this is that due to introducing redundancy, you made your system highly available. Ok. What is the other advantage of this? Now look carefully. We must have read abstractions. Now here a layer of abstraction has been added. Clustering adds a layer of abstraction. How is that? The user does not know whether data is coming from S1 or S2 or S3. He is getting data. Ok. He is getting data. And you have abstracted this thing. Ok. You are not showing the user. You have hidden it. That information is coming from S1, S2 or S3. That information is coming from somewhere. Ok. What is the second advantage of this? Load balancing. Now what is load balancing? Now we were talking in the beginning that we get multiple requests. Multiple requests. Ok. Millions of requests can come. Millions of requests. Right. Now suppose if there is only one server. If there is only one server. Suppose if there is a million of requests coming. Then all the server has to be handled sequentially. Ok. So this server basically gets loaded. And it can be hanged or crashed. Ok. So better than this, if I have replicasets. I have many replicas made of the same DB. Of the same dataset. So I have to load balance them. Ok. So can I load balance them? Some requests I will give to S1. Some requests I will give to S2. Some requests I will give to S3. Ok. So there were so many requests. I will send something here. I will send something here. I will send something here. Ok. So what will happen with this? Load will be balanced. No system will crash. Ok. Because if a lot of information is put in one system. A lot of load will be put in it. So there are many chances that it will crash. Ok. So this is my advantage. That I am running by doing load balancing. So my system. My system does not crash. It keeps running robustly. And the website never gets down. Database never gets affected. Ok. Now if you want to do load balancing. Then you have to put a logic. A layer of abstraction. Here you have to put an abstraction. You have to put an interface. And what will that layer do? What will that layer do? That will be the layer. The layer of load balancer. The layer of load balancer. You must have understood. Ok. A lot of your requests are coming. And what will you do? You will see. Which server is there? Which server is less loaded? Is S1 less loaded? Or is S2 less loaded? Whatever is less loaded. I will give the request to that. I will pass on the request. Pass on the new request. Ok. So basically what do we want? If we have made a replica set. Then we need a load balancer. In our architecture, what will that load balancer do? That whatever server's replica. Whatever server is the least loaded. That request should be given to that new request. Ok. So we will understand that load balancing is a very big. Benefit. That I will benefit from load balancing. Now look carefully that all the things are going somewhere. Going towards availability. Why are we doing load balancing? We are doing load balancing so that first it becomes fast. If only one server is loaded then it will be delayed. So that your request will be executed fast. Second, if only one server is loaded then it will crash. Everything is going towards availability. Your website should be on every time. It should not happen that your website is down. Ok. So third and the most important. Its advantage is availability. When I will call it high availability. What does high availability mean? If your S1 is down. Ok. Let's write it properly once. If your S1 is down. Then S2 and S3 is available as a backup. So you are able to ensure at any point of time. That your request will be executed by any server. And the user will not even know that the request has come from S2. Because there is a layer of abstraction. Ok. Whatever server is available, the request will come from that. And because all the servers have the same information store. So the user will always get the same data. Ok. Very good. So these were three very important examples of clustering. And clustering is very important. And in today's date, whatever you are using Facebook, Instagram, WhatsApp, YouTube. Whatever you are using, clustering is applied in all. Replica sets are made. Ok. And the replica set that is made. I will tell you a very good example of that. And which is also your homework. You will read it properly. You have to read content delivery network. Purely replica set and clustering is related. Ok. What will you read about this? You will read from the internet. Ok. You will read from the internet. And you will tell the comment section. I will give you a little hint. What is this? You make a group of servers and distribute them geographically. After distributing geographically, the same data is also in India. The same data is also in the US. The same data is also in Europe. Now whenever the nearest to it. Like whenever people of India will send a request. So that thing will be sent to the Indian server. And so that you get the response of your request after the fast process. So in this way, to do fast delivery of content. I divide the group of servers geographically. So that they work together. And those replica sets are YouTube's database. Which is in India's data server. That will be in the US data server. Ok. Very good. I am not going into much detail about this. It is your homework. You will read it properly. Ok. And once tell in the comment section. Whether you understand or not. This is a very important concept. You should know this. We have covered it in a very quick video. Let's go to the notes quickly. Let's go to the notes and see what is written about it. So clustering. Which is also called making replica sets. What is the replica set? Group of servers. So that they work together. Process of combining more than one server. And instance connecting a single database. What am I saying about single database? That there is only single data in it. There is only one data. There is only one data. There is only one data set. It is repeated. On different servers. Ok. We have seen the advantages of this. Advantage of data redundancy. There is load balancing. There is high availability. Ok. And another advantage of load balancing is that you can do scaling. This can provide scaling seamlessly. Scaling means when many user requests keep increasing. So one server is not able to load it. So you have made the servers replica. Ok. So with the help of load balancing. Basically, you can handle the new requests. The more requests are coming. Ok. And this ensures high availability. Because if you have high availability. If one server is loaded. Then it can crash. High availability. The work of all these is to ensure high availability. Your website should keep running. Ok. How does clustering work? How does clustering work? We do clustering work. In a clustering architecture, all the requests are split in many computers. So that individual user request is executed. Ok. The same simple. Many requests are coming. While looking at them, load balancer sees which computer or which node, which server is less loaded. I send it on that. So many requests are coming. Many requests are coming. Whatever server is less loaded. Let's send it on that. Ok. So this is how clustering architecture works. So I hope you understand. Clustering must have become clear in your mind. It is a very important topic. In real time. All companies. Big big product based companies. In their product. Whatever their internet based product is. They definitely use clustering. To ensure high availability. That their users. Exceed. In real time. So in real time. Clustering is very important. So in real time. Clustering is very important. In real time. Clustering is very important. So in real time. Clustering is very important. So in real time. Clustering is very important. So in real time. Clustering is very important. So in real time. Clustering is very important. Clustering is very important. Ok. So I hope that. You have got a seamless experience. That you never down their website. Ok. Very good. See you in next lecture. Till then. Good bye."
+}
