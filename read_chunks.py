@@ -2,7 +2,9 @@ import requests
 import os 
 import json
 import pandas as pd 
-
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np 
+import joblib
 
 def creation_emb(text):
     r=requests.post('http://localhost:11434/api/embed',json={
@@ -33,13 +35,17 @@ for chunkse in cchunks :
         chunk['vectors']=all_vectors[i]
         id+=1
         dictt.append(chunk)
+        
+     
+            
+    
     
 
 df=pd.DataFrame().from_records(dictt)
-print(df)
-# print(dictt)
 
-# for _ in range(20):
-#     creation_emb(['Ok'] * 300)
+joblib.dump(df,'all_embeddings.joblib')
+
+
+
 
 
