@@ -1,1 +1,9 @@
 Audio(SQL)/
+__pycache__/
+*.pyc
+*.pyo
+
+
+.joblib/
+joblib/
+*.joblib
