@@ -25,5 +25,5 @@ for audio in audios :
 
     chunks_withdata={'chunks':chunks,'text':result['text']}
     
-    with open (f'jsons/{audio}.json','w') as f :
+    with open (f'Chunks/{audio}.json','w') as f :
      json.dump(chunks_withdata,f)
