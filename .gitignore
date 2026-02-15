@@ -4,6 +4,4 @@ __pycache__/
 *.pyo
 
 
-.joblib/
-joblib/
-*.joblib
+all_embeddings.joblib
