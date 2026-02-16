@@ -38,17 +38,28 @@ best_res=simiralrities.argsort()[::-1][0:n_results] # sort the similartiy and gi
 new = df.loc[best_res, ['start', 'end', 'title', 'text','number']]
 
 
-prompt=f""" I will Give you an json file with start,end,Title,text,Number user asked an question  below give answer in format :
--The time stamp (which is in sec convert them in hrs, Minutes ) of the chunks with their title ,number+1(alaways) and the most related Text .
-the chunks are :{new.to_json()}
-STUDENT QUESTION: {query}
-Dont give any extra text 
-Answer like a friendly, patient teacher. Use bullet points, numbered steps, code examples, or tables if it helps explain better. Be clear and encouraging."""
+prompt = f'''I am teaching web development in my Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
+{new[["title", "number", "start", "end", "text"]].to_json(orient="records")}
+---------------------------------
+{query}
+User asked this question related to the video chunks, you have to answer in a human way (dont mention the above format, its just for you) where and how much content is taught in which video (in which video and at what timestamp) and guide the user to go to that particular video. If user asks unrelated question, tell him that you can only answer questions related to the course
+'''
+
  
 # for index,item in new.iterrows():  # iterrows rows by rows 
-#     print(item['text'],item['title'],item['start'],item['end'])
+#     print(item['text'],item['title'],item['start'],item['end'])   
 
-with open('prompt.txt','w',encoding="utf-8") as f :
-    f.write(prompt)
+# with open('prompt.txt','w',encoding="utf-8") as f :
+#     f.write(prompt)
 
 
+def model(prompt):
+    r=requests.post('http://localhost:11434/api/generate',json={
+            "model": 'llama3.2',
+            "prompt": prompt,
+            "stream":False
+            })
+    result=r.json()
+    return result
+
+print(model(prompt))
