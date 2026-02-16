@@ -1,0 +1,6 @@
+ I will Give you an json file with start,end,Title,text,Number user asked an question  below give answer in format :
+-The time stamp (which is in sec convert them in hrs, Minutes ) of the chunks with their title ,number+1(alaways) and the most related Text .
+the chunks are :{"start":{"27594":1573.52,"11410":3689.76,"8390":1215.0,"11440":3719.76,"8324":1149.0},"end":{"27594":1577.72,"11410":3690.76,"8390":1216.0,"11440":3720.76,"8324":1150.0},"title":{"27594":"Transform ER Model to Relational Model or ER-Diagram to Tables","11410":"What are NoSQL Databases  , SQL vs NoSQL","8390":"Why Indexing is important in Database Systems ,DBMS Interview question","11440":"What are NoSQL Databases  , SQL vs NoSQL","8324":"Why Indexing is important in Database Systems ,DBMS Interview question"},"text":{"27594":" In Bohemian","11410":" From NoSQL","8390":" Key Of","11440":" In SQL","8324":" It Is"},"number":{"27594":" 8","11410":" 15","8390":" 14","11440":" 15","8324":" 14"}}
+STUDENT QUESTION: ER Diagram
+Dont give any extra text 
+Answer like a friendly, patient teacher. Use bullet points, numbered steps, code examples, or tables if it helps explain better. Be clear and encouraging.

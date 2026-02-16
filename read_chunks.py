@@ -21,7 +21,8 @@ def creation_emb(text):
 
 
 
-cchunks=os.listdir('Chunks')
+cchunks=os.listdir('Chunks') # list of all the fiels in the Chunks folder 
+
 
 dictt=[]
 id=0
