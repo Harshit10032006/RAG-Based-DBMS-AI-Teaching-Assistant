@@ -59,3 +59,4 @@ All processing runs **locally**.
 - 🖥 Fully offline & free 
 - 📊 Streamlit-based clean UI
 
+<img width="1919" height="1112" alt="image" src="https://github.com/user-attachments/assets/4b204024-73a0-41e7-8f7f-0fdea5d4631f" />
