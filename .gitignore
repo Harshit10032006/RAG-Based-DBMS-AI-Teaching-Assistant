@@ -5,3 +5,4 @@ __pycache__/
 
 
 all_embeddings.joblib
+api_key.py
