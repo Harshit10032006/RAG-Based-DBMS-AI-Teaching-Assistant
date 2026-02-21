@@ -1,4 +1,4 @@
-# 📘 DBMS AI Teaching – Personal Study Assistant
+#  DBMS AI Teaching – Personal Study Assistant
 
 This project is a **personal AI-powered study assistant** built to help me efficiently learn and revise **Database Management Systems (DBMS)** using my course lecture videos.
 
@@ -9,7 +9,7 @@ Instead of rewatching full lectures, this tool lets me:
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 
 This project is created **for my personal DBMS studies**.
 
@@ -24,7 +24,7 @@ It answers **only questions related to my DBMS course**.
 
 ---
 
-## 🧠 How It Works 
+##  How It Works 
 
 1. Lecture text are converted into embeddings
 2. User question is converted into an embedding
@@ -50,13 +50,13 @@ All processing runs **locally**.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 📚 DBMS-only question answering
-- 🎥 Lecture-wise retrieval
-- ⏱ Timestamp conversion (hours & minutes)
-- 🧠 AI-generated human-like explanations
-- 🖥 Fully offline & free 
-- 📊 Streamlit-based clean UI
+-  DBMS-only question answering
+-  Lecture-wise retrieval
+-  Timestamp conversion (hours & minutes)
+-  AI-generated human-like explanations
+-  Fully offline & free 
+-  Streamlit-based clean UI
 
 <img width="1919" height="1112" alt="image" src="https://github.com/user-attachments/assets/4b204024-73a0-41e7-8f7f-0fdea5d4631f" />
